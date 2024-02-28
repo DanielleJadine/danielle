@@ -1,3 +1,228 @@
-body{
-    background-color: darksalmon;
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
+
+.container {
+    background-color: lightyellow;
+
+}
+
+/*--------index----------*/
+.header {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 20px 10px;
+    background-color: bisque;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    z-index:100;
+}
+.logo{
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    margin: left 35px; ;
+    font-weight: 500;
+    margin-left: 35px;
+}
+
+.navbar a {
+font-size: 18px;
+color:white;
+text-decoration: none;
+}
+.home-content {
+    padding: 10px;
+    margin: 100px;
+    color:#ddd;
+    border: solid;
+}
+.name {
+    padding: 0;
+    margin: 0;
+    color:#ff0000;
+}
+.round-image{
+    border-radius: 50%;
+    margin-top: 150px;
+}
+.container{
+display:flex;/*Use flexbox*/
+justify-content: center;/*Center horizontally*/
+align-items: center;/*Center vertically*/
+
+}
+button{
+    background-color: black;
+    color:#ddd;
+    border-radius: 5px ;
+    cursor: pointer;
+    text-align: center;
+    transition:background-color 1s;
+}
+.button:hover{
+background-color: darkgray;
+
+}
+.button:active {
+    background-color: darkgray;
+}
+
+/*-------about-----------*/
+.header {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 20px 10px;
+    background-color: bisque;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    z-index:100;
+}
+.logo{
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    margin: left 35px; ;
+    font-weight: 500;
+    margin-left: 35px;
+}
+
+.navbar a {
+font-size: 18px;
+color:white;
+text-decoration: none;
+}
+
+p.center{
+    text-align: center;
+}
+
+
+
+body{
+    background-color: dimgray;
+}
+/*--------education--------*/
+.header {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 20px 10px;
+    background-color: bisque;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    z-index:100;
+}
+
+.logo{
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    margin: left 35px; ;
+    font-weight: 500;
+    margin-left: 35px;
+}
+
+.navbar a {
+font-size: 18px;
+color:white;
+text-decoration: none;
+}
+
+body{
+    background-color: dimgray;
+}
+
+.border{
+    border: 2px solid black;
+}
+
+h1,h2,h3.center{
+    text-align: center;
+}
+
+.list-box1, .list-box2, .list-box3, .list-box4 {
+    /* border:1px solid #ccc;border around the box */
+    border-radius: 5px;/*rounded corners*/
+    padding:10px;/* spacing inside the box*/
+    width: 300px;/*width of the box*/
+    background: color #f9f9f9;/* background color of the box*/
+    margin-left: 620px;
+}
+
+.list-box ul {
+    list-style-type: none; /*remove default list styles*/
+    padding: 0%; /* remove default padding*/
+    margin: 0%;/*remove default margin*/
+    
+}
+
+.list-box ul li {
+    padding: 5px;/*add space between list items*/
+    border-bottom: 1px solid #ddd; /* add border between list ietms*/
+}
+
+.list-box ul li :last-child {
+    border-bottom :none;/* remove border from last list item*/
+}
+
+
+/*----------contact---------*/
+.header {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 20px 10px;
+    background-color: bisque;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    z-index:100;
+}
+
+.logo{
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    margin: left 35px; ;
+    font-weight: 500;
+    margin-left: 35px;
+}
+
+.navbar a {
+font-size: 18px;
+color:white;
+text-decoration: none;
+}
+
+body{
+    background-color: dimgray;
+}
+
+    .form-container{
+        width: 300px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    form{
+        display:block
+    }
+
+
+    
