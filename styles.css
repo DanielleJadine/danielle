@@ -34,7 +34,7 @@ img{
     max-width: 100%;
     height: auto;
 }
-.main-contennt{
+.main-content{
 background-color: #fff;
 padding: 20px;
 border-radius: 8px;
@@ -50,13 +50,14 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 1);
     border-radius: 5px;
     margin-right: 10px;
 }
+
 nav ul{
     list-style-type:none ;
     margin: 0;
     padding: 0;
     text-align: center;
 }
-nav li a{
+nav li a {
     display: inline;
     margin-right: 20px;
 }
@@ -64,8 +65,8 @@ nav li a{
 nav ul li a:hover{
     color: #0056b3;
 }
+
 footer{
-    background-color: #007bff;
     color: #fff;
     text-align: center;
     padding: 10px 0;
