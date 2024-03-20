@@ -43,7 +43,7 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 1);
 }
 .btn{
     display: inline-block;
-    background-color: #007bff;
+    background-color:#007bff;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -60,6 +60,7 @@ nav ul{
 nav li a {
     display: inline;
     margin-right: 20px;
+    color: #fff;
 }
 
 nav ul li a:hover{
@@ -133,13 +134,13 @@ body{
 /*--------education--------*/
 .Education {
     display: flex;
-  align-items: center;
-   padding: 10% 10%;
+  justify-content: center;
    margin: 0;
 
 }
 .education-content{
     max-width: 600px;
+    align-items: center;
     }
     
 .education-content h2,h3{
@@ -201,12 +202,14 @@ body{
     width: 300px;/*width of the box*/
     background: color #f9f9f9;/* background color of the box*/
     margin: 10px;
+    
 }
 
 .list-box ul {
     list-style-type: none; /*remove default list styles*/
     padding: 0; /* remove default padding*/
     margin: 0;/*remove default margin*/
+   text-align: center;
     
 }
 
@@ -222,10 +225,9 @@ body{
 
 /*----------contact---------*/
 .contact {
-    display: flex;
+    display: inline;
    text-align: center;
-   padding: 100px 200px;
-}
+   }
 
 .contact-content{
     max-width: 600px;
@@ -233,11 +235,12 @@ body{
 
 .contact-content h1{
     font-size: 56px;
-    font-weight: 700;    
+    font-weight: 700;   
 }
 
 .contact-content p {
     font-size: 16px;
+    margin-right: 50px ;
 }
 
 .contact-content form {
