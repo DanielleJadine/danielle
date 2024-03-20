@@ -192,6 +192,9 @@ body{
    margin: 0;
 
 }
+.education-content h1{
+    padding: auto;
+}
 .education-content{
     max-width: 90%;
     align-items: center;
