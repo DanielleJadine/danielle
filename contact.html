@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyPortfolio</title>
+    <title>Danielle Engelbrecht</title>
     <link rel="stylesheet" href="styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -40,12 +40,13 @@
 </form>
 </section>
 </div>
+<div id="map"></div>
 <section class="map">
   <h2>My Location</h2>
    <!-----Embed Google Maps Here----->
    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6620.444067391767!2d18.460780438584226!3d-33.93541699153755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5db42c93a685%3A0xec815c21c6eaef71!2sCapaCiTi%20Tech%20Career%20Accelerator!5e0!3m2!1sen!2sza!4v1709645694618!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
      </section>
-   
+    
 
 <footer style="text-align: center;">
     <p>&copy;<span id="copyright year"></span>2024 Danielle Engelbrecht.All rights are reserved.</p>
@@ -56,6 +57,23 @@
       <a href="https://github.com/DanielleJadine"><i class='bx bxl-github'></i></a>  
     </div>
   </footer>
+  <div id="map"></div>
+<script>
+    function initMap() {
+        const myLatLng = { lat: -33.93541699153755, lng: 18.460780438584226 };
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 15,
+            center: myLatLng,
+        });
+        new google.maps.Marker({
+            position: myLatLng,
+            map,
+            title: "My Location",
+        });
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+/
   <script>
 document.getElementById('contact-Form').addEventListener('submit', function(event) {
 var emailInput= document.getElementById('email');
