@@ -34,7 +34,7 @@
 
         <label for="email">Email Address:</label><br>
         <input type="email" id="email" name="email" required><br>
-        
+        <span id="emailError" style="color:red; display: none;" >Please enter a vaild email address</span><br>
         <button type="submit">Submit</button>
       </div>
 </form>
@@ -55,5 +55,24 @@
       <a href="https://www.instagram.com"><i class='bx bxl-instagram-alt'></i></a>
       </div>
   </footer>
+  <script>
+document.getElementById('contact-Form').addEventListener('submit', function(event) {
+var emailInput= document.getElementById('email');
+var emailError= document.getElementById('emailError');
+
+if(!isVaildEmail(emailInput.value)) {
+  emailError.style.display= 'inline';
+  event.preventDefault();//Prevent form submission
+} else{
+  emailError.style.display='none';
+}
+
+});
+
+function isVaildEmail(email){
+  var emailRegex= /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+}
+  </script>
 </body>
 </html>
